@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+<form method= "post" action="/store" enctype="multipart/form-data">
+<!-- The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute). The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). The enctype attribute specifies how the form-data should be encoded when submitting it to the server. -->
+<!-- ESTO ES UNA CARD -->
+  <br>
+  <div class="cardBootstap">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Datos a ingresar</h4>
+      <p class="card-text">
+  <!-- ESTO ES UN FORM GRUP       -->
+        <div class="mb-3">
+          <label for="textNombre" class="form-label">Nombre de foto</label>
+          <input type="text" name="textNombre" id="textNombre" class="form-control" placeholder="" aria-describedby="textNombre">
+        </div>
+
+        <div class="mb-3">
+          <input class="btn btn-success" id="btnCrear"  type="submit" value="AGREGAR">
+        </div>
+      </p>
+    </div>
+
+
+  </div>
+</form>
